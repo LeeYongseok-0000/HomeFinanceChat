@@ -16,9 +16,9 @@
 
 ## 팀원 소개
 
-|                    (팀장) [이용석](https://github.com/LeeYongseok-0000)                    |                      [이상원](https://github.com/lee-1002)                    |                      [장준혁](https://github.com/jjh-8249)                     |                      [박지혁](https://github.com/weare2415)                     |                      [양지성](https://github.com/jxxhxx)                     |
+|                    (팀장) [이용석](https://github.com/LeeYongseok-0000)                    |                      [이상원](https://github.com/lee-1002)                    |                      [장준혁](https://github.com/jjh-8249)                     |                      [박지혁](https://github.com/jihyuk123979)                     |                      [양지성](https://github.com/jxxhxx)                     |
 |:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-| [<img src="https://avatars.githubusercontent.com/u/184890981?v=4" width="200" />](https://github.com/LeeYongseok-0000) | [<img src="https://avatars.githubusercontent.com/u/183713556?v=4" width="200" />](https://github.com/lee-1002) | [<img src="https://avatars.githubusercontent.com/u/183588723?v=4" width="200" />](https://github.com/jjh-8249) | [<img src="https://avatars.githubusercontent.com/u/177728506?v=4" width="200" />](https://github.com/weare2415) | [<img src="https://github.com/jxxhxx.png" width="200" />](https://github.com/jxxhxx) |
+| [<img src="https://avatars.githubusercontent.com/u/184890981?v=4" width="200" />](https://github.com/LeeYongseok-0000) | [<img src="https://avatars.githubusercontent.com/u/183713556?v=4" width="200" />](https://github.com/lee-1002) | [<img src="https://avatars.githubusercontent.com/u/183588723?v=4" width="200" />](https://github.com/jjh-8249) | [<img src="https://avatars.githubusercontent.com/u/177728506?v=4" width="200" />](https://github.com/jihyuk123979) | [<img src="https://github.com/jxxhxx.png" width="200" />](https://github.com/jxxhxx) |
 
 ### 역할 분담
 #### 각 팀원들은 풀스택 기반으로 역할을 수행함
@@ -235,6 +235,7 @@ home_project/
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 
 ---
+
 
 
 
