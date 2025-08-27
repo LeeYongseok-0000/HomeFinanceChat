@@ -125,6 +125,7 @@ home_project/
 │   ├── src/main/java/      # Java 소스 코드
 │   ├── src/main/resources/ # 설정 파일
 │   └── build.gradle        # Gradle 설정
+│   └── upload              # 사진 문서       
 ├── pyt/                     # Flask Python 백엔드 (AI 음성 인식)
 │   ├── src/pyt/            # Python 소스 코드
 │   │   ├── app.py          # Flask 메인 애플리케이션
@@ -253,6 +254,7 @@ home_project/
 ---
 
 ⭐ 이 프로젝트가 도움이 되었다면 스타를 눌러주세요!
+
 
 
 
