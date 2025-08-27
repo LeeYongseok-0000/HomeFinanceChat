@@ -76,11 +76,11 @@
 
 ### Prerequisites
 
-- Java 17 이상
-- Python 3.x 이상
-- Node.js 16 이상
-- MySQL 또는 PostgreSQL
-- Gradle
+- **Java 21** (Spring Boot 3.5.4)
+- **Python 3.x** (Flask 2.3.3)
+- **Node.js 18+** (React 19.1.1)
+- **MariaDB 10.x** (MySQL 호환)
+- **Gradle 8.x** (Spring Boot 3.5.4)
 
 ### Backend 실행
 
@@ -253,6 +253,7 @@ home_project/
 ---
 
 ⭐ 이 프로젝트가 도움이 되었다면 스타를 눌러주세요!
+
 
 
 
