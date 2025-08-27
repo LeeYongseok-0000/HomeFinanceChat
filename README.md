@@ -138,7 +138,7 @@ home_project/
 ## ERD
 <img width="1414" height="860" alt="KakaoTalk_20250827_144010715" src="https://github.com/user-attachments/assets/f6d7b451-0b2f-4ea3-82db-2eb01d5d3716" />
 
-##유스케이스
+## 유스케이스
 <img width="1586" height="784" alt="KakaoTalk_20250827_151339732_01" src="https://github.com/user-attachments/assets/4296ae64-2ae3-4291-9a15-15adedaa68b9" />
 
 
@@ -253,6 +253,7 @@ home_project/
 ---
 
 ⭐ 이 프로젝트가 도움이 되었다면 스타를 눌러주세요!
+
 
 
 
