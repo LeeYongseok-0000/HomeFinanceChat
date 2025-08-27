@@ -145,6 +145,14 @@ home_project/
 
 ## 주요 컴포넌트
 
+### Frontend
+
+- **Components**: 재사용 가능한 UI 컴포넌트
+- **Pages**: 페이지별 컴포넌트
+- **API**: 백엔드 API 호출
+- **Hooks**: 커스텀 React 훅
+- **Slices**: Redux 상태 관리
+
 ### Backend
 
 #### Spring Boot (Java)
@@ -161,13 +169,7 @@ home_project/
 - **voice_service.py**: Google Cloud STT 및 OpenAI GPT 연동
 - **templates**: HTML 템플릿 (챗봇 인터페이스)
 
-### Frontend
 
-- **Components**: 재사용 가능한 UI 컴포넌트
-- **Pages**: 페이지별 컴포넌트
-- **API**: 백엔드 API 호출
-- **Hooks**: 커스텀 React 훅
-- **Slices**: Redux 상태 관리
 
 ## 주요 페이지
 
@@ -235,6 +237,7 @@ home_project/
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 
 ---
+
 
 
 
