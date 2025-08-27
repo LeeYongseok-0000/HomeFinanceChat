@@ -74,7 +74,7 @@
 
 ## 실행하기
 
-### Prerequisites
+### 환경 버전
 
 - **Java 21** (Spring Boot 3.5.4)
 - **Python 3.x** (Flask 2.3.3)
@@ -253,6 +253,7 @@ home_project/
 ---
 
 ⭐ 이 프로젝트가 도움이 되었다면 스타를 눌러주세요!
+
 
 
 
