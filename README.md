@@ -142,23 +142,23 @@ npm start, yarn start
 
 ```
 home_project/
-├── front/                  # React 프론트엔드
-│   ├── src/                # React 소스 코드
-│   ├── public/             # 정적 파일
-│   └── package.json        # npm 의존성
-├── back/                   # Spring Boot 백엔드
-│   ├── src/main/java/      # Java 소스 코드
-│   ├── src/main/resources/ # 설정 파일
-│   └── build.gradle        # Gradle 설정
-│   └── upload              # 사진 문서       
-├── pyt/                    # Flask Python 백엔드 (AI 음성 인식)
-│   ├── src/pyt/            # Python 소스 코드
-│   │   ├── app.py          # Flask 메인 애플리케이션
-│   │   ├── voice_service.py # 음성 서비스 로직
-│   │   └── templates/      # HTML 템플릿
-│   ├── requirements.txt    # Python 의존성
-│   └── README.md           # Python 프로젝트 문서
-└── README.md               # 프로젝트 문서
+├── front/                    # React 프론트엔드
+│   ├── src/                  # React 소스 코드
+│   ├── public/               # 정적 파일
+│   └── package.json          # npm 의존성
+├── back/                     # Spring Boot 백엔드
+│   ├── src/main/java/        # Java 소스 코드
+│   ├── src/main/resources/   # 설정 파일
+│   └── build.gradle          # Gradle 설정
+│   └── upload                # 사진 문서       
+├── pyt/                      # Flask Python 백엔드 (AI 음성 인식)
+│   ├── src/pyt/              # Python 소스 코드
+│   │   ├── app.py            # Flask 메인 애플리케이션
+│   │   ├── voice_service.py  # 음성 서비스 로직
+│   │   └── templates/        # HTML 템플릿
+│   ├── requirements.txt      # Python 의존성
+│   └── README.md             # Python 프로젝트 문서
+└── README.md                 # 프로젝트 문서
 ```
 
 ## ERD
@@ -276,6 +276,7 @@ home_project/
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 
 ---
+
 
 
 
