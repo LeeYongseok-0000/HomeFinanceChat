@@ -280,6 +280,9 @@ home_project/
 #### 뉴스 페이지 화면
 <img width="1921" height="920" alt="KakaoTalk_20250828_185557643" src="https://github.com/user-attachments/assets/1781bc2a-8096-4516-bda8-abd5ded8cabe" />
 
+### 실거래가 정보 제공
+- **공공데이터 활용**: 데이터의 신뢰도 향상
+- **실시간 검색어**: 사용자의 관심사 확인
 
 ### 지도 서비스
 
@@ -309,6 +312,7 @@ home_project/
 
 
 ---
+
 
 
 
