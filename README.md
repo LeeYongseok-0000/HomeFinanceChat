@@ -235,8 +235,12 @@ home_project/
 
 - **신용 상품 추천**: 신용 정보에 따른 맞춤 대출 상품 추천
 - **대출 가능액 계산** : 신용 정보에 따른 최대 대출 가능액 도출
+#### 대출 상품 추천 페이지
 
  > **담보대출 계산**:
+![미디어2 (5)](https://github.com/user-attachments/assets/b4cd9862-66bb-4787-a41d-5d28653cb25f)
+
+
 >   
   >  - **DSR 비율**: 연소득의 40% (담보대출 기준)
   >  - **LTV 비율**: 담보가치의 70-80% (담보 유형별 차등 적용)
@@ -297,9 +301,15 @@ home_project/
 - **매물 거래 데이터 관리**: 이전 거래 데이터 검토 및 삭제
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 #### 관리자 페이지
-<img width="1920" height="919" alt="KakaoTalk_20250828_184854961" src="https://github.com/user-attachments/assets/ae96c682-9237-46b1-98f0-06c9ba8f9d34" />
+![KakaoTalk_20250828_190923953](https://github.com/user-attachments/assets/ba0840cd-fbf1-4a89-9aeb-81362e0d2037)
+
+
+
+
+
 
 ---
+
 
 
 
