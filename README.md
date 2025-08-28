@@ -109,14 +109,14 @@
 
 ### Backend 실행
 
-#### - Spring Boot (Java)
+####  Spring Boot (Java)
 
 ```bash
 cd back
 ./gradlew bootRun
 ```
 
-#### - Flask (Python)
+####  Flask (Python)
 
 ```cmd
 cd pyt
@@ -126,7 +126,7 @@ pip install -r requirements.txt
 python src/pyt/app.py
 ```
 
-#### - Frontend 실행
+####  Frontend 실행
 
 ```bash
 cd front
@@ -134,7 +134,7 @@ npm install
 npm start, yarn start
 ```
 
-#### - 환경 설정
+####  환경 설정
 
 `back/src/main/resources/application.properties` 파일에서 데이터베이스 연결 정보를 설정하세요.
 
@@ -276,6 +276,7 @@ home_project/
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 
 ---
+
 
 
 
