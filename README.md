@@ -256,6 +256,13 @@ home_project/
 - **우리 마을 Q&A**: 마을의 편의시설, 교통, 교육환경 등 생활 전반에 대한 질문과 답변
 - **우리 마을 이야기**: 지역별 마을 소식, 지역 정보 공유
 - **댓글 및 답변**: 게시글에 대한 상호작용
+
+
+#### 커뮤니티 메인 화면 및 게시글 구성
+<img width="1920" height="920" alt="KakaoTalk_20250828_184919046" src="https://github.com/user-attachments/assets/f0f88358-762b-4565-bcba-709695400dd8" />
+<img width="1921" height="921" alt="KakaoTalk_20250828_185043812" src="https://github.com/user-attachments/assets/1381f6b3-a4e3-4123-ae60-7ffa3073f613" />
+<img width="1330" height="621" alt="KakaoTalk_20250828_185008630" src="https://github.com/user-attachments/assets/803fbceb-486e-433b-aef8-fd1d36ebd109" />
+
 #### 커뮤니티 CRUD 플로우 차트
 <img width="917" height="789" alt="커뮤니티 플로우" src="https://github.com/user-attachments/assets/9d638496-ea3d-4b11-9062-642c776ab760" />
 
@@ -266,6 +273,8 @@ home_project/
 - **지역별 뉴스**: 지역별 부동산 관련 소식 및 개발 계획
 - **시장 분석**: 부동산 시장 전망 및 전문가 분석 기사
 - **정책 정보**: 정부 부동산 정책 및 규제 변경 사항
+#### 뉴스 페이지 화면
+<img width="1921" height="920" alt="KakaoTalk_20250828_185557643" src="https://github.com/user-attachments/assets/1781bc2a-8096-4516-bda8-abd5ded8cabe" />
 
 
 ### 지도 서비스
@@ -287,8 +296,11 @@ home_project/
 - **매물 승인 관리**: 등록된 매물의 검토 및 승인
 - **매물 거래 데이터 관리**: 이전 거래 데이터 검토 및 삭제
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
+#### 관리자 페이지
+<img width="1920" height="919" alt="KakaoTalk_20250828_184854961" src="https://github.com/user-attachments/assets/ae96c682-9237-46b1-98f0-06c9ba8f9d34" />
 
 ---
+
 
 
 
