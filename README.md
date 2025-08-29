@@ -283,6 +283,7 @@ home_project/
 ### 실거래가 정보 제공
 - **공공데이터 활용**: 데이터의 신뢰도 향상
 - **실시간 검색어**: 사용자의 관심사 확인
+![미디어2](https://github.com/user-attachments/assets/60a707b3-15ae-45aa-9a16-53019f3cdc52)
 
 ### 지도 서비스
 
@@ -312,6 +313,7 @@ home_project/
 
 
 ---
+
 
 
 
