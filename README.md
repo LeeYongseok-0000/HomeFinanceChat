@@ -1,6 +1,8 @@
 # 혼집내줘
 
-- 부동산 매물 검색, 중개, 관리가 가능한 통합 웹 플랫폼입니다.
+- 부동산 매물 검색, 중개, 관리가 가능한 통합 웹 플랫폼입니다
+- 이 플랫폼은 <strong>React 프론트엔드</strong>, <strong>Spring Boot 백엔드</strong>, 그리고 <strong>Flask 기반 AI 모듈</strong>을 결합하여 부동산 매물 검색·중개·관리뿐만 아니라 음성 인식과 대화형 상담까지 지원하는 통합 웹 서비스입니다.
+- 모듈화된 디렉토리 구조와 계층형 아키텍처를 채택해 <strong>UI 재사용성</strong>과 <strong>상태 관리</strong>의 효율성을 극대화하며, 안정적인 데이터 처리와 확장 가능한 서비스 운영을 실현했습니다.
 
 
 
@@ -191,7 +193,7 @@ home_project/
 
 #### Flask (Python)
 
-- **app.py**: Flask 메인 애플리케이션 및 라우팅
+- **app.py**: Flask 기반 AI 서비스 메인 애플리케이션 및 라우팅
 - **voice_service.py**: Google Cloud STT 및 OpenAI GPT 연동
 - **templates**: HTML 템플릿 (챗봇 인터페이스)
 
@@ -313,6 +315,7 @@ home_project/
 
 
 ---
+
 
 
 
