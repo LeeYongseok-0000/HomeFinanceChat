@@ -16,24 +16,20 @@
 
 - 25.08.01(금) ~ 25.08.28(목)
 
-## 팀원 소개
-
-| [박지혁](https://github.com/jihyuk123979) | [이상원](https://github.com/lee-1002) | [이용석](https://github.com/LeeYongseok-0000) (팀장) | [양지성](https://github.com/jxxhxx) | [장준혁](https://github.com/jjh-8249) |
-|:----------------------------------------:|:-------------------------------------:|:--------------------------------------------------:|:-------------------------------------:|:-------------------------------------:|
-| [<img src="https://github.com/jihyuk123979.png" width="200"/>](https://github.com/jihyuk123979) | [<img src="https://github.com/lee-1002.png" width="200"/>](https://github.com/lee-1002) | [<img src="https://github.com/LeeYongseok-0000.png" width="200"/>](https://github.com/LeeYongseok-0000) | [<img src="https://github.com/jxxhxx.png" width="200"/>](https://github.com/jxxhxx) | [<img src="https://github.com/jjh-8249.png" width="200"/>](https://github.com/jjh-8249) |
 
 
-### 역할 분담
+
+### 팀원 소개 및 역할 분담
 #### 각 팀원들은 풀스택 기반으로 역할을 수행함
 
-이용석 (팀장)
+[<img src="https://github.com/LeeYongseok-0000.png" width="100"/>](https://github.com/LeeYongseok-0000)  |[이용석](https://github.com/LeeYongseok-0000) (팀장)|
 -
 
 - **프로젝트 총괄**
 - **시연영상 제작**
 - **코드 통합**
 
-이상원
+ [<img src="https://github.com/lee-1002.png" width="100"/>](https://github.com/lee-1002) |[이상원](https://github.com/lee-1002)|
 -
 
 - **뉴스API를 이용한 뉴스페이지 구현**
@@ -41,7 +37,7 @@
 - **프로젝트 전체적 UI 개선**
 - **디렉토리 구조 정의 및 기본 라우팅 설정** 
 
-장준혁
+[<img src="https://github.com/jjh-8249.png" width="100"/>](https://github.com/jjh-8249) | [장준혁](https://github.com/jjh-8249)|
 -
 
 - **실거래가 공공 데이터 리스트화**
@@ -49,7 +45,7 @@
 - **PDF 작성**
 
 
-박지혁
+ [<img src="https://github.com/jihyuk123979.png" width="100"/>](https://github.com/jihyuk123979) |[박지혁](https://github.com/jihyuk123979)|
 -
 
 - **대출 상품 추천 페이지**
@@ -58,7 +54,7 @@
 - **관리자 페이지**
 - **소셜 로그인 기능 구현 (카카오, 네이버, 구글 )**
 
-양지성
+| [<img src="https://github.com/jxxhxx.png" width="100"/>](https://github.com/jxxhxx) |[양지성](https://github.com/jxxhxx) 
 -
 
 - **커뮤니티 페이지 구현**
