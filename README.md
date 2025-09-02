@@ -287,6 +287,9 @@ home_project/
 
 - **카카오맵 연동**: 매물 위치 시각화
 - **지역별 검색**: 지도 기반 지역별 매물 검색
+  
+### 지도 페이지
+![Animation](https://github.com/user-attachments/assets/6cbd5b00-1947-496f-b9ce-94bf2d924a61)
 
 ### AI 챗봇
 
@@ -316,6 +319,7 @@ home_project/
 ---------------------------------------------------------------------------------------------------------------
 ## PDF
 [PDF 보기](https://github.com/user-attachments/files/22040056/default.pdf)
+
 
 
 
