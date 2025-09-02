@@ -303,8 +303,7 @@ home_project/
 - **매물 거래 데이터 관리**: 이전 거래 데이터 검토 및 삭제
 - **통계 대시보드**: 매물 등록 현황, 검색 통계 등
 #### 관리자 페이지
-![KakaoTalk_20250828_190923953](https://github.com/user-attachments/assets/ba0840cd-fbf1-4a89-9aeb-81362e0d2037)
-
+![Animation](https://github.com/user-attachments/assets/8283ec55-5b10-4e8f-a1cc-9da62c662ae6)
 
 
 
@@ -317,6 +316,7 @@ home_project/
 ---------------------------------------------------------------------------------------------------------------
 ## PDF
 [PDF 보기](https://github.com/user-attachments/files/22040056/default.pdf)
+
 
 
 
