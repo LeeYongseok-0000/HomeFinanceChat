@@ -4,3 +4,5 @@ config.json
 application-secret.properties  front/src/api/googleApi.js 
 *.env 
 config.json 
+pyt/venv/ 
+pyt/.venv/ 
