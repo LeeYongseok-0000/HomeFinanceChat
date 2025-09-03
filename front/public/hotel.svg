@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="hotel">
+  <rect width="4" height="8" x="23" y="5" fill="#ccedff"></rect>
+  <polygon fill="#ccedff" points="19 29 19 19 29 17 29 29 19 29"></polygon>
+  <polygon fill="#ccedff" points="3 29 3 7 19 3 19 29 3 29"></polygon>
+  <path fill="#1aadff" d="M29.6338,16.2266a0.9934,0.9934,0,0,0-.83-0.207L20,17.78V13h2a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V5a1,1,0,0,0-1-1H23a1,1,0,0,0-1,1H20V3a1,1,0,0,0-1.2422-.97l-16,4A1,1,0,0,0,2,7V29a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V17A1.0008,1.0008,0,0,0,29.6338,16.2266ZM24,6h2v6H24V6ZM22,7v4H20V7h2ZM4,7.7808l14-3.5V28H15V22a1,1,0,0,0-1-1H8a1,1,0,0,0-1,1v6H4V7.7808ZM9,28V23h4v5H9Zm19,0H20V19.82l8-1.6V28Z"></path>
+  <rect width="4" height="2" x="22" y="24" fill="#1aadff"></rect>
+  <rect width="4" height="2" x="22" y="21" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="6" y="9" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="6" y="13" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="6" y="17" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="10" y="9" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="10" y="13" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="10" y="17" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="14" y="9" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="14" y="13" fill="#1aadff"></rect>
+  <rect width="2" height="2" x="14" y="17" fill="#1aadff"></rect>
+</svg>

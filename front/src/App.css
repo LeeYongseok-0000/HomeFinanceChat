@@ -1,0 +1,29 @@
+/* Tailwind CSS를 사용하므로 기본 스타일은 제거 */
+
+/* 맵 페이지에서 스크롤바 제거 */
+.map-container {
+  overflow: hidden;
+}
+
+/* 맵 페이지에서만 스크롤바 제거 */
+.map-layout {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* 움직이는 그라데이션 애니메이션 */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+}

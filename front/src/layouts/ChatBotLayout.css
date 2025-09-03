@@ -1,0 +1,57 @@
+.chatbot-layout {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  text-align: center;
+}
+
+.chatbot-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 팝업 창 크기에 맞는 반응형 */
+@media (max-width: 500px) {
+  .logo-section {
+    padding: 3px;
+  }
+
+  .logo {
+    height: 70px;
+    margin-bottom: 1px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+}

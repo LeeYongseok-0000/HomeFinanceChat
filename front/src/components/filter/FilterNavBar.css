@@ -1,0 +1,867 @@
+/* FilterNavBar.css - 상단 nav바 필터 스타일 */
+
+/* 상단 네비게이션 바 */
+.top-nav {
+  position: relative;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  overflow-x: auto;
+  z-index: 1000;
+}
+
+/* 네비게이션 필터 컨테이너 */
+.nav-filters {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-width: max-content;
+}
+
+/* 필터 아이템 */
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.filter-item:hover {
+  background-color: #e9ecef;
+  border-color: #3b82f6;
+}
+
+.filter-item.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.filter-item-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* 필터 화살표 */
+.filter-arrow {
+  font-size: 10px;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.filter-arrow.up {
+  transform: rotate(180deg);  /* 열린 상태: 180도 회전해서 위쪽을 향함 */
+}
+
+.filter-arrow.down {
+  transform: rotate(0deg);    /* 닫힌 상태: 회전 없어서 아래쪽을 향함 */
+}
+
+/* 전체 초기화 버튼 - 필터 아이템들과 같은 스타일 */
+.reset-all-filters-btn {
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* 사용자 조건 필터 스타일 */
+.user-condition-info {
+  margin-bottom: 20px;
+}
+
+.user-condition-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.max-purchase-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background-color: #f0f9ff;
+  border: 1px solid #0ea5e9;
+  border-radius: 8px;
+}
+
+.amount-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0ea5e9;
+}
+
+.amount-label {
+  font-size: 14px;
+  color: #0369a1;
+}
+
+.no-credit-info {
+  text-align: center;
+  padding: 16px;
+  background-color: #fef2f2;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+}
+
+.no-credit-info p {
+  margin: 4px 0;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.filter-toggle {
+  margin-top: 16px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: #3b82f6;
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+.reset-all-filters-btn:hover {
+  background-color: #e9ecef;
+  border-color: #3b82f6;
+  color: #374151;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reset-all-filters-btn:active {
+  transform: translateY(0);
+}
+
+/* 리셋 아이콘 스타일 */
+.reset-icon {
+  width: 20px;
+  height: 20px;
+  color: inherit;
+}
+
+/* 필터 드롭다운 */
+.filter-dropdown {
+  position: fixed;
+  z-index: 999999;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  min-width: 300px;
+  max-width: 400px;
+  pointer-events: auto;
+  animation: filterDropdownFadeIn 0.2s ease-out;
+}
+
+@keyframes filterDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 드롭다운 헤더 */
+.filter-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f8f9fa;
+  margin-left: 10px;
+}
+
+.filter-dropdown-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.close-filter {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.close-filter:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* 드롭다운 본문 */
+.filter-dropdown-body {
+  padding: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* 컴팩트 모드: 방/화장실/층수 등 단일 입력 섹션의 여백 축소 */
+.compact-section .filter-content { margin-bottom: 8px; }
+.compact-section .filter-group { margin-bottom: 8px; }
+.compact-section .single-input-container { margin: 0; }
+.compact-section .filter-single-input { gap: 6px; }
+.compact-section .filter-dropdown-header { padding: 12px; }
+.compact-section .filter-dropdown-body { padding: 12px; }
+.compact-section .apply-filter-btn,
+.compact-section .reset-filter-btn { padding: 8px 12px; }
+
+/* 필터 콘텐츠 */
+.filter-content {
+  margin-bottom: 16px;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+/* 월세/전세/매매 필터 스타일 */
+.transaction-type-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+/* 거래 유형 선택 스타일 */
+.transaction-type-selection {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.transaction-type-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.transaction-type-btn {
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.transaction-type-btn:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.transaction-type-btn.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.transaction-type-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 8px;
+}
+
+.section-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.deposit-section,
+.monthly-rent-section {
+  margin-bottom: 15px;
+}
+
+.monthly-rent-section:last-child {
+  margin-bottom: 0;
+}
+
+/* 범위 입력 스타일 */
+.filter-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.range-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.range-input {
+  width: 120px;
+  min-width: 120px;
+  padding: 8px 12px;
+  padding-right: 25px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  box-sizing: border-box;
+}
+
+/* 브라우저 기본 스피너 완전 제거 */
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.range-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.range-input::placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* 스피너 스타일 */
+.range-input-spinner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  pointer-events: auto;
+}
+
+.spinner-arrow {
+  width: 12px;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6px;
+  color: #6b7280;
+  user-select: none;
+  cursor: pointer;
+}
+
+.spinner-arrow:hover {
+  color: #374151;
+}
+
+/* 범위 구분자 및 단위 */
+.range-separator {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  padding: 0 4px;
+}
+
+.range-unit {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+/* 단일 입력 스타일 */
+.filter-single-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.single-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* 가로 ± 스텝퍼 */
+.inline-stepper { display: flex; gap: 6px; margin-left: 8px; }
+.stepper-btn {
+  min-width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  background: #f8fafc;
+  color: #374151;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.stepper-btn:hover { background: #e5e7eb; }
+.stepper-btn:active { background: #e2e8f0; }
+
+.single-input {
+  width: 120px;
+  min-width: 120px;
+  padding: 8px 12px;
+  padding-right: 25px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  box-sizing: border-box;
+}
+
+/* 브라우저 기본 스피너 완전 제거 */
+.single-input::-webkit-outer-spin-button,
+.single-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.single-input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.single-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.single-input::placeholder {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.single-input-unit {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  white-space: nowrap;
+}
+
+/* 화장실 스피너 */
+.bathroom-spinner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  pointer-events: auto;
+}
+
+.bathroom-arrow {
+  width: 12px;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6px;
+  color: #6b7280;
+  user-select: none;
+  cursor: pointer;
+}
+
+.bathroom-arrow:hover {
+  color: #374151;
+}
+
+/* 층수 스피너 */
+.floor-spinner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  pointer-events: auto;
+}
+
+.floor-arrow {
+  width: 12px;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6px;
+  color: #6b7280;
+  user-select: none;
+  cursor: pointer;
+}
+
+.floor-arrow:hover {
+  color: #374151;
+}
+
+/* 방 개수 스피너 */
+.room-spinner {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  pointer-events: auto;
+}
+
+.room-arrow {
+  width: 16px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: #6b7280;
+  user-select: none;
+  cursor: pointer;
+}
+
+.room-arrow:hover {
+  color: #374151;
+}
+
+/* 면적 변환 표시 스타일 */
+.area-conversion {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.conversion-text {
+  font-weight: 500;
+  color: #333;
+}
+
+.conversion-separator {
+  margin: 0 8px;
+  color: #999;
+}
+
+/* 필터 액션 버튼 스타일 */
+.filter-actions {
+  display: flex;
+  gap: 10px;
+  padding: 1px;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  margin-top: 10px;
+}
+
+.apply-filter-btn {
+  flex: 1;
+  padding: 10px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.apply-filter-btn:hover {
+  background-color: #2563eb;
+}
+
+.reset-filter-btn {
+  flex: 1;
+  padding: 10px 16px;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-filter-btn:hover {
+  background-color: #4b5563;
+}
+
+/* 선택된 거래 유형 표시 */
+.selected-types {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #e0f2fe;
+  border: 1px solid #0288d1;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #0277bd;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* 중복 선택 가능 안내 텍스트 스타일 */
+.transaction-type-selection .section-title {
+  position: relative;
+}
+
+/* 추가옵션 필터 스타일 */
+.options-section {
+  margin-bottom: 20px;
+}
+
+.options-section:last-child {
+  margin-bottom: 0;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.other-options {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.other-options .option-checkbox {
+  flex: 1;
+}
+
+.option-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.checkbox-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.option-checkbox:hover {
+  background-color: #f3f4f6;
+}
+
+.option-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  background-color: transparent;
+  position: relative;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.option-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* 체크되지 않은 상태에서는 ::after 가상 요소를 완전히 숨김 */
+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.option-label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 0 10px;
+  }
+
+  .reset-all-filters-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+
+  .nav-filters {
+    gap: 10px;
+  }
+
+  .filter-item {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .filter-dropdown {
+    min-width: 280px;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav {
+    height: 50px;
+    padding: 0 8px;
+  }
+
+  .reset-all-filters-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .nav-filters {
+    gap: 8px;
+  }
+
+  .filter-item {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .filter-dropdown {
+    min-width: 260px;
+    max-width: 95vw;
+  }
+}
