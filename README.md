@@ -28,6 +28,7 @@
 - **프로젝트 총괄**
 - **시연영상 제작**
 - **코드 통합**
+- **Notion, Github 관리**
 
  [<img src="https://github.com/lee-1002.png" width="100"/>](https://github.com/lee-1002) |[이상원](https://github.com/lee-1002)|
 -
@@ -319,6 +320,7 @@ https://youtu.be/80KGIx4u6Fo
 ---------------------------------------------------------------------------------------------------------------
 ## PDF
 [PDF 보기](https://github.com/user-attachments/files/22040056/default.pdf)
+
 
 
 
